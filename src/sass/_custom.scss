@@ -17,6 +17,12 @@
 
 /* BREAKPOINTS */
 
+@media (max-width: 768px) {
+  .md-hidden {
+    display: none;
+  }
+}
+
 /* SM breakpoint */
 @media (min-width: 576px) {
   /* CUSTOM WIDTHS */
@@ -61,6 +67,10 @@
   /* CUSTOM SPACER */
   .mb-md-3 {
     margin-bottom: ($spacer);
+  }
+
+  .mx-md-auto {
+    margin-inline: auto;
   }
 }
 

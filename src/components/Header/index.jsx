@@ -6,12 +6,15 @@ import logo from "../../assets/logo.png";
 const Header = () => {
   return (
     <Navbar bg="warning" expand="md">
-      <Container className="flex-md-column align-items-md-center h-md-100">
+      <Container
+        fluid
+        className="flex-md-column align-items-md-center h-md-100 justify-content-sm-around"
+      >
         <Navbar.Brand href="#home">
-          <img src={logo} alt="" className="w-25 w-md-80 mx-auto d-block" />
+          <img src={logo} alt="" className="w-25 w-md-80 d-block mx-md-auto" />
         </Navbar.Brand>
 
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className="mr-4" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="flex-column text-center">
             <Nav.Link href="#home">首頁</Nav.Link>
@@ -20,7 +23,7 @@ const Header = () => {
             <Nav.Link href="#contact">聯絡我們</Nav.Link>
           </Nav>
         </Navbar.Collapse>
-        <Nav.Link href="#boxingclub" className="mb-md-3">
+        <Nav.Link href="#boxingclub" className="mb-md-3 md-hidden">
           BOXING CLUB
         </Nav.Link>
       </Container>
