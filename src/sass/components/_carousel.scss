@@ -1,0 +1,26 @@
+.carousel-item img {
+  opacity: 0.6;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  display: none;
+}
+
+.carousel .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+.carousel-caption {
+  // top: 50%; /* position the top  edge of the element at the middle of the parent */
+  // left: 50%; /* position the left edge of the element at the middle of the parent */
+  // transform: translate(-50%, -50%);
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
