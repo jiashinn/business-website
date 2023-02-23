@@ -1,4 +1,4 @@
-import Slider from "../../components/Carousel.jsx";
+import Slider from "../../components/Carousel/index.jsx";
 import Layout from "../../components/Layout";
 
 const Homepage = () => {

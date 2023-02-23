@@ -1,14 +1,12 @@
 import { Container } from "react-bootstrap";
-import Header from "../Header";
+import NavbarTemplate from "../NavbarTemplate";
 
 const Layout = ({ children }) => {
   return (
     <Container fluid className="d-md-flex">
-      <Header />
-
+      <NavbarTemplate />
       <div className="w-100">{children}</div>
     </Container>
   );
 };
-
 export default Layout;
