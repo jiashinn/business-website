@@ -18,3 +18,5 @@ npm install, npm run dev
 * Framer Motion - 過濾動畫
 
 
+## 學習歷程
+- 第一次使用Bootstrap結合sass, 花了較多時間學習如何設定變數及分類
