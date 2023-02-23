@@ -20,3 +20,6 @@ npm install, npm run dev
 
 ## 學習歷程
 - 第一次使用Bootstrap結合sass, 花了較多時間學習如何設定變數及分類
+- 使用useParam 動態更換產品連結
+
+後續調整-產品卡片size, pagination, 點擊相關推薦商品連結後回到頁面上方
