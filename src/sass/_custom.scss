@@ -17,17 +17,8 @@
   width: min(80%, 400px);
 }
 
-.hover-card {
-  background-color: rgba(127, 0, 255, 0.7);
-  color: #fff;
-  z-index: 1;
-  opacity: 0;
-  padding: 2rem 1.3rem 2rem 2rem;
-  transition: all 0.4s ease 0s;
-}
-
-.card:hover .hover-card {
-  opacity: 1;
+.fontawesomeicon {
+  cursor: pointer;
 }
 
 .gap {

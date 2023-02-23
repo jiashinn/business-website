@@ -5,7 +5,7 @@ import logo from "../../assets/logo.png";
 
 const NavbarTemplate = () => {
   return (
-    <Navbar bg="warning" expand="md">
+    <Navbar expand="md" className="border">
       <Container
         fluid
         className="flex-md-column align-items-md-center h-md-100 justify-content-sm-around"
@@ -30,9 +30,6 @@ const NavbarTemplate = () => {
             <Link to="/contactus">聯絡我們</Link>
           </Nav>
         </Navbar.Collapse>
-        <Nav.Link href="#boxingclub" className="mb-md-3 md-hidden">
-          BOXING CLUB
-        </Nav.Link>
       </Container>
     </Navbar>
   );

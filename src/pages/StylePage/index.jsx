@@ -15,6 +15,8 @@ const StylePage = () => {
   const [activeCategory, setActiveCategory] = useState("");
   const [imgModal, setImgModal] = useState("");
   const [loading, setLoading] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postsPerPage, setPostsPerPage] = useState(5);
 
   const filtered = products.filter((product) =>
     product.category.includes(activeCategory)
@@ -48,6 +50,10 @@ const StylePage = () => {
   const closeImgModal = () => {
     setImgModal("");
   };
+
+  const lastPostIndex = currentPage * postsPerPage;
+  const firstPostIndex = lastPostIndex - postsPerPage;
+  const currentPosts = products.slice(firstPostIndex, lastPostIndex);
 
   return (
     <Layout>

@@ -94,47 +94,48 @@ const ProductDetails = () => {
           <Skeleton count={10} height={40} width={400} circle={false} />
         </div>
       ) : (
-        <Container fluid className="w-75 mx-auto">
-          <section>
-            <div className="my-4 w-md-20 mx-auto">
-              <img src={displayImg} className="" />
-            </div>
-            <div className="d-flex flex-wrap justify-content-center align-items-center gap">
-              {images &&
-                images.map((image) => {
-                  return (
-                    <img
-                      className="w-25 border w-md-15"
-                      key={image}
-                      src={image}
-                      onClick={() => {
-                        handleDisplayImg && handleDisplayImg(image);
-                      }}
-                    />
-                  );
-                })}
-            </div>
-
-            <FontAwesomeIcon
-              icon={faArrowAltCircleLeft}
-              onClick={handlePrevImg}
-              className="my-3 fa-2x "
-            />
-            <FontAwesomeIcon
-              icon={faArrowAltCircleRight}
-              onClick={handleNextImg}
-              className="my-3 fa-2x"
-            />
-          </section>
-          <section className="border-bottom py-3">
-            <h2 className="border-bottom py-4">{product.description}</h2>
-            <ul>
-              <li>{product.brand}</li>
-              <li>{product.category}</li>
-              <li>{product.title}</li>
-            </ul>
-          </section>
-          <section className="my-5">
+        <Container fluid className=" w-75 mx-auto">
+          <div className="d-md-flex  flex-md-row  justify-content-center flex-sm-column align-items-center mx-auto gap ">
+            <section className="w-md-60">
+              <div className="my-4">
+                <img src={displayImg} className="" />
+              </div>
+              <div className="d-flex flex-wrap justify-content-start align-items-center gap">
+                {images &&
+                  images.map((image) => {
+                    return (
+                      <img
+                        className="w-25 border w-md-25"
+                        key={image}
+                        src={image}
+                        onClick={() => {
+                          handleDisplayImg && handleDisplayImg(image);
+                        }}
+                      />
+                    );
+                  })}
+              </div>
+            </section>
+            <section className="border-bottom py-3 w-md-80">
+              <FontAwesomeIcon
+                icon={faArrowAltCircleLeft}
+                onClick={handlePrevImg}
+                className="my-3 fa-2x fontawesomeicon"
+              />
+              <FontAwesomeIcon
+                icon={faArrowAltCircleRight}
+                onClick={handleNextImg}
+                className="m-3 fa-2x fontawesomeicon"
+              />
+              <h2 className="border-bottom py-4">{product.description}</h2>
+              <ul>
+                <li>{product.brand}</li>
+                <li>{product.category}</li>
+                <li>{product.title}</li>
+              </ul>
+            </section>
+          </div>
+          <section className="my-5 mt-5 pt-5">
             <h3>Related Items</h3>
             <div className="d-md-flex flex-wrap">
               {relatedProducts &&
