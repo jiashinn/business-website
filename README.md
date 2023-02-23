@@ -1,6 +1,10 @@
+#網站
+https://tiny-smakager-b9cef1.netlify.app/
+
 
 # 作品說明
 面試作業 - 以元件化方式撰寫相關功能及css
+
 
 ## 系統說明
 npm install, npm run dev
