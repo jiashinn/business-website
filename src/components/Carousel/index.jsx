@@ -22,7 +22,7 @@ const Slider = () => {
             <h3>卓越品質</h3>
             <h5>讓經營成為享受</h5>
           </div>
-          <p>酷碼 期待與您的合作</p>
+          <p>期待與您的合作</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
