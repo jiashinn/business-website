@@ -1,6 +1,10 @@
+# 網站
+https://tiny-smakager-b9cef1.netlify.app/
+
 
 # 作品說明
 面試作業 - 以元件化方式撰寫相關功能及css
+
 
 ## 系統說明
 npm install, npm run dev
@@ -22,4 +26,9 @@ npm install, npm run dev
 - 第一次使用Bootstrap結合sass, 花了較多時間學習如何設定變數及分類
 - 使用useParam 動態更換產品連結
 
-後續調整-產品卡片size, pagination, 點擊相關推薦商品連結後回到頁面上方
+
+##後續調整-
+- 產品卡片size, 
+- pagination, 
+- 點擊相關推薦商品連結後回到頁面上方,
+- 產品卡片hover破版
